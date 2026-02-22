@@ -4,7 +4,7 @@
 
 This project presents an interactive financial dashboard that tracks and compares the performance of seven major technology stocks — Apple, Microsoft, Google, Amazon, NVIDIA, Meta, and Tesla — against the S&P 500 benchmark index. The central question the dashboard is designed to answer is: *How have the most influential tech companies performed over the past year, and how do they compare to the broader market?*
 
-The motivation behind choosing this topic was the sustained dominance of large-cap technology companies in driving overall market returns. For a non-technical stakeholder such as a retail investor, portfolio manager, or business analyst, understanding how individual stocks move relative to each other and against the market benchmark provides immediate, actionable context. Rather than reporting static figures, the dashboard allows the user to dynamically select any combination of stocks, filter by time period, and drill into specific dimensions of performance — all within a single, cohesive interface.
+The motivation behind choosing this topic was the sustained dominance of large-cap technology companies in driving overall market returns. For a non-technical stakeholder such as a retail investor, portfolio manager, or business analyst, understanding how individual stocks move relative to each other and against the market benchmark provides immediate, actionable context. Rather than reporting static figures, the dashboard allows the user to dynamically select any combination of stocks, filter by time period, and drill into specific dimensions of performance, all within a single interface.
 
 ---
 
