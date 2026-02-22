@@ -106,7 +106,7 @@ The S&P 500 benchmark at 37.4% demonstrates that while the index performed well 
 
 ## Live Dashboard Link
 
-🔗 **---**
+🔗 **https://stocks-analysis-dashboard.streamlit.app/**
 
 To run locally:
 ```bash
