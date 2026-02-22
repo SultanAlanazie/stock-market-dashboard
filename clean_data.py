@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 
 def clean_and_transform_data(input_file='data/stock_data_raw.csv'):
-    """Clean data and calculate metrics"""
     
-    print("Loading raw data...")
+    print("Loading raw data.")
     df = pd.read_csv(input_file)
     df['Date'] = pd.to_datetime(df['Date'])
     
