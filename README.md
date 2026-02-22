@@ -64,22 +64,23 @@ Interactivity was designed to be progressive: the user first selects which stock
 ## Dashboard Screenshots
 
 ### Total Gains — Cumulative Return Over Time
-![Total Gains](screenshots/totalGains.png)
+<img width="1909" height="984" alt="totalGains" src="https://github.com/user-attachments/assets/3ca0e1ee-f75d-4b00-8e65-780818ea99f3" />
 
 The Total Gains tab displays the cumulative percentage return for all selected stocks since the start of the analysis period. NVIDIA's dramatic outperformance is immediately visible, separating itself far above the cluster of other names and the S&P 500 baseline.
 
 ### Price History — Technical Analysis View
-![Price History](screenshots/priceHistory.png)
+<img width="1917" height="985" alt="priceHistory" src="https://github.com/user-attachments/assets/97643d21-8306-45c9-a668-bd4b41e7bc8e" />
+
 
 The Price History tab shows individual stock price action with a 50-day and 200-day moving average overlay. Users can select any stock from the dropdown. The chart enables quick identification of trend reversals and golden/death cross events.
 
 ### Trading Activity — Volume Analysis
-![Trading Activity](screenshots/tradingActivity.png)
+<img width="1914" height="994" alt="tradingActivity" src="https://github.com/user-attachments/assets/c4cf7d03-11a6-42e0-a639-9953b365a6ce" />
 
 The Trading Activity tab presents daily trading volume as a grouped bar chart across all selected stocks. Notable volume spikes around earnings periods and major macro events are visible, particularly for NVIDIA in mid-2025.
 
 ### Price Swings — 30-Day Rolling Volatility
-![Price Swings](screenshots/priceSwings.png)
+<img width="1919" height="980" alt="priceSwings" src="https://github.com/user-attachments/assets/00b3e11f-a03c-4cbc-91e4-d47f3745e4c9" />
 
 The Price Swings tab plots the rolling 30-day volatility for each stock. NVIDIA and Tesla consistently exhibit the highest volatility, while Apple and the S&P 500 remain the most stable throughout the period.
 
