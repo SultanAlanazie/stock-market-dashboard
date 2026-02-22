@@ -1,8 +1,3 @@
-"""
-Stock Market Data Fetcher - Fixed for latest yfinance API
-Run this first: pip install --upgrade yfinance
-"""
-
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
