@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project presents an interactive financial dashboard that tracks and compares the performance of seven major technology stocks — Apple, Microsoft, Google, Amazon, NVIDIA, Meta, and Tesla — against the S&P 500 benchmark index. The central question the dashboard is designed to answer is: *How have the most influential tech companies performed over the past year, and how do they compare to the broader market?*
+This project presents an interactive financial dashboard that tracks and compares the performance of seven major technology stocks (Apple, Microsoft, Google, Amazon, NVIDIA, Meta, and Tesla) against the S&P 500 benchmark index. The central question the dashboard is designed to answer is: *How have the most influential tech companies performed over the past year, and how do they compare to the broader market?*
 
 The motivation behind choosing this topic was the sustained dominance of large-cap technology companies in driving overall market returns. For a non-technical stakeholder such as a retail investor, portfolio manager, or business analyst, understanding how individual stocks move relative to each other and against the market benchmark provides immediate, actionable context. Rather than reporting static figures, the dashboard allows the user to dynamically select any combination of stocks, filter by time period, and drill into specific dimensions of performance, all within a single interface.
 
@@ -100,7 +100,7 @@ Tesla experienced significant price swings with a one-year return of approximate
 
 The S&P 500 benchmark at 37.4% demonstrates that while the index performed well in absolute terms, every individual tech stock in this analysis either matched or exceeded it — a reminder that concentrated tech exposure has historically rewarded investors willing to tolerate sector-specific risk during periods of AI-driven growth.
 
-**Recommendation to stakeholders:** Given the spread in risk-adjusted performance across these names, a portfolio constructed with equal weighting across all seven stocks would have generated stronger risk-adjusted returns than any single position except NVIDIA. Monitoring 30-day rolling volatility as a forward-looking risk indicator — rather than relying solely on historical returns — would provide earlier signals of changing market conditions.
+**Recommendation to stakeholders:** Given the spread in risk-adjusted performance across these names, a portfolio constructed with equal weighting across all seven stocks would have generated stronger risk-adjusted returns than any single position except NVIDIA. Monitoring 30-day rolling volatility as a forward-looking risk indicator, rather than relying solely on historical returns, would provide earlier signals of changing market conditions.
 
 ---
 
@@ -126,8 +126,6 @@ streamlit run dashboard.py
 
 **Market hours and trading calendars.** The dataset uses business day data only. Non-trading days (weekends, public holidays) are absent from the date axis. Rolling calculations use actual trading days rather than calendar days, meaning a "30-day" volatility window represents approximately six calendar weeks.
 
-**No transaction costs.** All return calculations assume frictionless trading with no brokerage fees, taxes, or bid-ask spreads. Real-world returns would be lower, particularly for high-frequency or high-turnover strategies.
-
 **S&P 500 representation.** The S&P 500 is represented by the `^GSPC` index rather than an ETF such as SPY. Index values do not account for dividend reinvestment, so the benchmark return shown is a price return rather than a total return. This slightly understates S&P 500 performance relative to a fund that reinvests dividends.
 
 **Survivorship bias.** The seven companies selected are among the largest and most successful technology firms by market capitalization. Including only successful companies in a retrospective analysis tends to overstate the expected returns of the sector as a whole, since failed or underperforming companies of the same period are not represented.
@@ -136,4 +134,4 @@ streamlit run dashboard.py
 
 ---
 
-*Data Source: Yahoo Finance via yfinance | Analysis Period: February 2025 – February 2026 | Built with Streamlit, Plotly, and Python*
+*Data Source: Yahoo Finance via yfinance | Analysis Period: February 2024 – February 2026 | Built with Streamlit, Plotly, and Python*
