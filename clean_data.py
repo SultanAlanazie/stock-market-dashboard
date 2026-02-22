@@ -7,58 +7,48 @@ def clean_and_transform_data(input_file='data/stock_data_raw.csv'):
     df = pd.read_csv(input_file)
     df['Date'] = pd.to_datetime(df['Date'])
     
-    # Sort by ticker and date
     df = df.sort_values(['Ticker', 'Date'])
     
-    # Calculate daily returns
     df['Daily_Return'] = df.groupby('Ticker')['Close'].pct_change() * 100
     
-    # Calculate cumulative returns (from start date)
     df['Cumulative_Return'] = df.groupby('Ticker')['Close'].transform(
         lambda x: ((x / x.iloc[0]) - 1) * 100
     )
     
-    # Calculate moving averages
     df['MA_50'] = df.groupby('Ticker')['Close'].transform(
         lambda x: x.rolling(window=50, min_periods=1).mean()
     )
+
     df['MA_200'] = df.groupby('Ticker')['Close'].transform(
         lambda x: x.rolling(window=200, min_periods=1).mean()
     )
     
-    # Calculate volatility (30-day rolling standard deviation of returns)
     df['Volatility_30D'] = df.groupby('Ticker')['Daily_Return'].transform(
         lambda x: x.rolling(window=30, min_periods=1).std()
     )
     
-    # Add year, month, quarter
     df['Year'] = df['Date'].dt.year
     df['Month'] = df['Date'].dt.month
     df['Quarter'] = df['Date'].dt.quarter
     df['Year_Month'] = df['Date'].dt.to_period('M').astype(str)
     
-    # Calculate year-to-date (YTD) return
     current_year = df['Date'].dt.year.max()
     ytd_start = df[df['Year'] == current_year].groupby('Ticker')['Close'].first()
     ytd_latest = df[df['Year'] == current_year].groupby('Ticker')['Close'].last()
     ytd_returns = ((ytd_latest / ytd_start) - 1) * 100
     
-    # Save cleaned data
     df.to_csv('data/stock_data_cleaned.csv', index=False)
     print(f"✓ Cleaned data saved! Total records: {len(df)}")
     
-    # Create summary statistics
     create_summary_stats(df, ytd_returns)
     
     return df
 
 def create_summary_stats(df, ytd_returns):
-    """Create summary statistics file"""
     
     latest_date = df['Date'].max()
     latest_data = df[df['Date'] == latest_date]
     
-    # Calculate metrics for each stock
     summary = []
     for ticker in df['Ticker'].unique():
         stock_data = df[df['Ticker'] == ticker]
