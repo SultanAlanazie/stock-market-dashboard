@@ -134,4 +134,4 @@ streamlit run dashboard.py
 
 ---
 
-*Data Source: Yahoo Finance via yfinance | Analysis Period: February 2024 – February 2026 | Built with Streamlit, Plotly, and Python*
+*Data Source: Yahoo Finance via yfinance | Analysis Period: February 2024 – February 2026 |
