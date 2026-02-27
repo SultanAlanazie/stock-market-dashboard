@@ -98,7 +98,7 @@ Apple and Meta showed stable but below-average performance, with Apple returning
 
 Tesla experienced significant price swings with a one-year return of approximately 115%, placing it second among individual names. However, its 30-day volatility was among the highest in the group, consistently above 2.4%, indicating that the gains came with meaningful short-term uncertainty.
 
-The S&P 500 benchmark at 37.4% demonstrates that while the index performed well in absolute terms, every individual tech stock in this analysis either matched or exceeded it — a reminder that concentrated tech exposure has historically rewarded investors willing to tolerate sector-specific risk during periods of AI-driven growth.
+The S&P 500 benchmark at 37.4% demonstrates that while the index performed well in absolute terms, every individual tech stock in this analysis either matched or exceeded it, a reminder that concentrated tech exposure has historically rewarded investors willing to tolerate sector-specific risk during periods of AI-driven growth.
 
 **Recommendation to stakeholders:** Given the spread in risk-adjusted performance across these names, a portfolio constructed with equal weighting across all seven stocks would have generated stronger risk-adjusted returns than any single position except NVIDIA. Monitoring 30-day rolling volatility as a forward-looking risk indicator, rather than relying solely on historical returns, would provide earlier signals of changing market conditions.
 
